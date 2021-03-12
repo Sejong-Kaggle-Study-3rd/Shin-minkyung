@@ -28,7 +28,7 @@
 
           ex. CNN(Convolution Neural Network): 다량의 데이터를 GPU를 사용해 레이어층을 여러개 만들고 ReLU, Dropout의 방법을 사용해 학습
 
-
+---
  #### 2. 인공지능의 역사
  ###### 1. 인공지능의 과거
        1. 첫번째 winter (winter = 연구비가 줄어들고 사람들의 기대가 떨어지는 시기)
