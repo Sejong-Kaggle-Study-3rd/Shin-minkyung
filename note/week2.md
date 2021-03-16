@@ -56,8 +56,32 @@ x2 = tfid.fit_transform(text).toarray()
 x3 = pd.DataFrame(x2, columns = tfid.get_feature_names())
 ```
 ---
-#####        2. 데이터 정제(Data Cleaning): 2-2, 2-3, 2-4
-#####        3. 데이터 통합(Data Integration): 여러개의 데이터 파일을 하나로 합치는 과정
-#####        4. 데이터 축소(Data Reduction): 데이터의 수를 줄이거나(Sampling), 데이터 차원을 축소
-#####        5. 데이터 변환(Data Transformation): 데이터 정규화, 로그, 평균값, 구간화
-#####        6. 데이터 균형(Data Balancing): 2-5
+####        2. 데이터 정제(Data Cleaning): 2-2, 2-3, 2-4
+#####            결측데이터(Empty Values) 채우기
+* 결측 데이터: np.nan, npNaN, None
+평균, 중위수, 최빈수로 대처하는 기법
+-> sklearn의 Imputer()
+
+---
+####        3. 데이터 통합(Data Integration): 여러개의 데이터 파일을 하나로 합치는 과정
+pandas의 merge
+
+---
+####        4. 데이터 축소(Data Reduction): 데이터의 수를 줄이거나(Sampling), 데이터 차원을 축소
+---
+####        5. 데이터 변환(Data Transformation): 데이터 정규화, 로그, 평균값, 구간화
+* 데이터 변환의 필요성: 머신러닝 알고리즘은 데이터가 가진 특성들을 비교하여 데이터패턴을 찾음
+          -> 데이터가 가진 특성 간 스케일 차가 크면 패턴을 찾는데 문제 발생
+#####            1. 표준화
+#####            2. 정규화
+* 정규화가 표준화보다 유용
+* bell-shape, 이상치(노이즈 많거나, empty data가 많은 경우) -> 표준화가 유용
+
+---
+####        6. 데이터 균형(Data Balancing): 2-5
+* 불균형 자료: (머신러닝 목적이 분류일 때) 특정 클래스의 관측치가 다른 클래스에 비해 매우 낮게 나타남
+#####            1. 과소표집(undersampling): 다수 클래스 제거
+#####            2. 과대표집(oversampling): 소수 클래스 복제 -> 학습데이터 추가
+                    ex. SMOTE, ADASYN
+* 과소표집보다 과대표집이 통계적으로 유용
+* 의사결정나무, 앙상블: 불균형 자료에 강인
