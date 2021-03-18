@@ -14,7 +14,7 @@
    * 샘플링기법으로 전처리→ 과소표집, 과대표집
                 
 ###      3. 데이터 전처리의 주요 기법
-[실습: jupyter notebook에서는 오류나서 이미지가 안떴는데 colab으로 하니까 ](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/code/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC%20%EC%8B%A4%EC%8A%B5_%EC%88%98%EC%A0%95.ipynb)
+[실습: jupyter notebook에서는 오류나서 이미지가 안떴는데 colab으로 하니까 됨](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/code/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC%20%EC%8B%A4%EC%8A%B5_%EC%88%98%EC%A0%95.ipynb)
 ####        1. 데이터 실수화(Data Vectorization): 데이터(범주형, 텍스트, 이미지)를 실수로 전환
 * 2차원 자료(행렬, 2차원 텐서) = [n_sample, n_feature]
   * 자료의 유형: 연속형 자료, 범주형 자료, 텍스트 자료
