@@ -22,11 +22,10 @@ ___
         p=1, 맨하탄 거리/ p=2, 유클리디언 거리
 
         - 학습 데이터 자체가 모형일 뿐 어떠한 추정 방법도 모형도 없음
-        - linear regression(classfication): wx + b의 판별식을 갖고 데이터를 분류 (w,b라는 파라미터를 추정)
-        - 간단하지만 성능이 떨어지지 않음
-            - = 게으른 학습(lazy learner), 사례중심학습(instance-based learning): 훈련 데이터에서 판별함수 (discriminative function)을 학습(linear classfication에서 파라미터를 구하는) 하는 대신 훈련 데이터 셋을 메모리에 저장하기 방법
+            <-> linear regression(classfication): wx + b의 판별식을 갖고 데이터를 분류 (w,b라는 파라미터를 추정)
+        -  게으른 학습(lazy learner), 사례중심학습(instance-based learning) ↔ model based learning: 수학 모델의 파라미터를 추정
+            훈련 데이터에서 판별함수 (discriminative function)을 학습(linear classfication에서 파라미터를 구하는) 하는 대신 훈련 데이터 셋을 메모리에 저장하기 방법
 
-                ↔ model based learning: 수학 모델의 파라미터를 추정
 
 ##    2. 문제점: 데이터의 차원이 증가하면 차원의 저주(curse of dimension)
         - 차원이 증가할 수록 성능 저하 심함
@@ -57,7 +56,8 @@ ___
 ###        1. 장점
             1. 학습데이터의 노이즈에 큰 영향 x
             2. 학습데이터 수가 많으면 효과적인 알고리즘: 전체 공간에서 데이터의 표현력을 보일 수 있음
-            3. 마할로비스 거리와 같이 사용할 때 매우 강건(robust)한 방법론이 됨
+            3. 간단하지만 성능이 떨어지지 않음
+            4. 마할로비스 거리와 같이 사용할 때 매우 강건(robust)한 방법론이 됨
 ###        2. 단점
             1. 최적 이웃의 수(k), 어떤 거리 척도(distance mertric)이 적합한지 알 수 없어 을 경험적으로 선택 = 데이터 각각의 특성에 맞게 연구자가 임의로 설정
 
