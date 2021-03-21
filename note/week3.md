@@ -17,7 +17,7 @@ ___
 ###    1. 정의: 주변 k개의 자료의 클래스 중 가장 많은 클래스로 특정 자료를 분류하는 방식
         - 새로운 자료를 가장 가까운(거리를 계산: minkowski 거리를 이용) 자료 5개의 자료(k=5)를 이용하여 투표하여 가장 많은 클래스로 할당
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/163efe2f-ae73-4867-a38c-e9bc5575d36b/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/163efe2f-ae73-4867-a38c-e9bc5575d36b/Untitled.png)
+            ![image](https://user-images.githubusercontent.com/80238096/111924221-b775e480-8ae6-11eb-8fcf-848f53ad7865.png)
 
         p=1, 맨하탄 거리/ p=2, 유클리디언 거리
 
@@ -25,6 +25,8 @@ ___
             <-> linear regression(classfication): wx + b의 판별식(discriminative function)을 갖고 데이터를 분류 (w,b라는 파라미터를 추정)
         -  게으른 학습(lazy learner), 사례중심학습(instance-based learning) ↔ model based learning: 수학 모델의 파라미터를 추정
             훈련 데이터 셋을 메모리에 저장하기 방법
+            ![image](https://user-images.githubusercontent.com/80238096/111924221-b775e480-8ae6-11eb-8fcf-848f53ad7865.png)
+
 
 ___
 ###    2. 문제점: 데이터의 차원이 증가하면 차원의 저주(curse of dimension)
