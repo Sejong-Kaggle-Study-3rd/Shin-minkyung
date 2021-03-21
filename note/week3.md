@@ -25,7 +25,6 @@ ___
             <-> linear regression(classfication): wx + b의 판별식(discriminative function)을 갖고 데이터를 분류 (w,b라는 파라미터를 추정)
         -  게으른 학습(lazy learner), 사례중심학습(instance-based learning) ↔ model based learning: 수학 모델의 파라미터를 추정
             훈련 데이터 셋을 메모리에 저장하기 방법
-            ![image](https://user-images.githubusercontent.com/80238096/111924221-b775e480-8ae6-11eb-8fcf-848f53ad7865.png)
 
 
 ___
