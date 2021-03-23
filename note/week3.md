@@ -7,7 +7,7 @@ ___
     - 이진분류(두 개로만 나눔), 다중 분류(셋 이상의 클래스로 분류)
     - ex. 얼굴 인식, 숫자 판별(MNIST: 사람이 손으로 쓴 digit data)
 2. 회귀
-    - 연속적인 숫사, 부동소수점수를 예측하는 것
+    - 연속적인 숫자, 부동소수점수를 예측하는 것
     - ex. 주식 가격을 예측하여 수익을 내는 알고리즘, 공부 시간에 따른 학점 예측
 ___
 
@@ -121,3 +121,16 @@ KNN 분류와 동일
 * KNN 회귀를 이용한 영화 평점 예측
     * 등급을 예측
 > Binary Classification: 평이 좋다 vs 나쁘다로 분류하는 것이 아님
+
+
+___
+3주차 feedback
+1. One-Hot Encoding 내용 다시 복습하기
+2. scikit-learn에서 함수 설명 읽어보기
+3. 캐글 4그랜드마스터 데이콘 초청 동영상 시청
+___
+1. One-Hot Encoding
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
+- Encode categorical features as a one-hot numeric array
+
+- 기계에 학습시키기 위해 문자열을 숫자로 바꾸기 위한 전처리 작업
