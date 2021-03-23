@@ -1,6 +1,7 @@
 ## Categorical Encoding
 categorical data를 numerical data로 인코딩
 ### 1. Lable Encoding
+![label encoding](https://ichi.pro/assets/images/max/724/1*VinegxkUYMzik9GpucWCFA.png)
 categorical feature -> 알파벳 순서로 숫자 할당(0,1,2,3..)
 * 문제점: 숫자로 변환되어 예측 성능 저하-> __숫자의 크기에 대한 특성__ (ex.선형회귀)
 >데이터의 연속성: 1에 할당된 데이터와 3의 할당된 데이터의 중간 데이터를 2라고 할 수 없음
