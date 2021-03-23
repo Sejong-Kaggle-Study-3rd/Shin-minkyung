@@ -129,8 +129,4 @@ ___
 2. scikit-learn에서 함수 설명 읽어보기
 3. 캐글 4그랜드마스터 데이콘 초청 동영상 시청
 ___
-1. One-Hot Encoding
-https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
-- Encode categorical features as a one-hot numeric array
 
-- 기계에 학습시키기 위해 문자열을 숫자로 바꾸기 위한 전처리 작업
