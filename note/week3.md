@@ -56,3 +56,68 @@ ___
 
 2. 새로운 관측치와의 거리를 전부 측정해야해서 __계산 시간이 오래걸림__
 > → 해결 방식; Locality Sensitive Hashing, Network based Indexer, Optimized product quantization
+___
+## 2. KNN 분류
+### 기계학습의 일반적인 실습 순서
+#### 1. 데이터 셋 불러오기
+Iris 데이터셋
+- seabon 라이브러리: 데이터 시각화를 담당하는 모듈
+- 통계 그래픽을 그리기 위한 고급 인터페이스 제공
+- 약간의 변수, 파라미터 조정으로 쉽게 그래프 표현 가능
+
+#### 2. 데이터셋 카테고리의 실수화
+DictVectorize(One-hot encoding) vs LabelEncoder(범주형 라벨)
+* LabelEncoder.fit_transform: 문자열을 cateogrial 값으로 전환
+
+#### 3. 데이터 분할
+data = train + validation + test
+데이터 분할 = 학습 데이터(train)와 시험 데이터(test)를 서로 겹치지 않도록 나누는 것
+- 목적: 학습과 평가를 나누기위해
+> 학습데이터로 학습시키고 학습에 사용되지 않은 시험데이터에 적용하여 generalization이 가능한지
+- validation
+ 정답이 없을 때⇒ overfiiting의 여부를 판단하기 위해 test 데이터의 일부를 validation으로 나눠놓고 학습 중간에 평가로 사용
+→ 학습하는 과정에서는 사용 x
+> 정답이 있을 때 ⇒ 학습 데이터가 많을수록 좋으므로 학습데이터로 사용
+
+* train_set_split(train,test,test_size,random_state,stratify)
+    * straitify: default = None → 쏠려서 분배될 수 있음
+        -> 고정해주면 일정한 비율로 분배
+
+#### 4. 입력데이터의 표준화
+경우에 따라 성능이 좋아지기도 하고 나빠지기도 함(통계적 특성이 깨지면 학습 저하) 
+- 표준화
+    - 측정 단위에 의해 영향 받지 않도록 하는 과정
+    - StandardScaler 클래스 사용
+
+- 시험 데이터의 표준화 = 학습 데이터에서 구한 특성 변수의 평균, 표준편차 이용
+    - 항상 학습과 시험 데이터를 분리해서 사용
+
+#### 5. 학습: 모형 추정 또는 사례 중심학습
+#### 6. 모델에 데이터 입력
+#### 7. 결과 분석
+- 성능평가
+1. confusion_matrix(y_true, y_pred)
+    혼합행렬: 원래 클래스와 예측 클래스가 일치하는 갯수를 표로 나타냄
+2. accuracy_score(y_true, y_pred)
+    전체 샘플 중 맞게 예측한 샘플의 비율
+3. precision_score(y_true, y_pred)
+    양성 클래스에 속한다고 예측한 샘플 중 실제 양성 클래스에 속하는 샘플의 비율
+4. recall_score(y_true, y_pred) 
+    실제 양성 클래스에 속한 표본 중 양성 클래스에 속한다고 예측한 표본의 수의 비율
+5. fbeta_score(y_true, y_pred, beta)
+6. f1_score(y_true, y_pred)
+7. roc_curve
+8. auc
+
+___
+## 3. KNN 회귀
+KNN 분류와 동일
+* 차이점: y의 예측치 계산 
+    * k개의 정답의 __평균__ 을 구함
+### 1. 단순 회귀: 단순 평균
+### 2. 가중회귀 (weighted regression)
+가중평균을 구해 가중치 부여
+> 거리가 가까울수록 유사도 증가
+* KNN 회귀를 이용한 영화 평점 예측
+    * 등급을 예측
+> Binary Classification: 평이 좋다 vs 나쁘다로 분류하는 것이 아님
