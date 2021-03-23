@@ -124,8 +124,8 @@ KNN 분류와 동일
 
 
 ___
-3주차 feedback
-1. One-Hot Encoding 내용 다시 복습하기
+## 3주차 feedback
+1. One-Hot Encoding 내용 다시 복습하기: [Label Coding vs One-Hot Coding](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week3_OneHotEncodig%20vs%20LabelEncoding.md)
 2. scikit-learn에서 함수 설명 읽어보기
 3. 캐글 4그랜드마스터 데이콘 초청 동영상 시청
 ___
