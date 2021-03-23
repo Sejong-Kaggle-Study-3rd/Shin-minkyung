@@ -16,8 +16,9 @@ class sklearn.preprocessing.OneHotEncoder(*, categories='auto', drop=None, spars
 https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
 
 > Encode categorical features as a one-hot numeric array
-    - 기계에 학습시키기 위해 문자열을 숫자로 바꾸기 위한 전처리 작업
-    - categorical feature -> one-hot(one-of-K or dummy) 숫자 배열로 인코딩 = 하나의 값만 True고 나머지는 False
+
+- 기계에 학습시키기 위해 문자열을 숫자로 바꾸기 위한 전처리 작업
+- categorical feature -> one-hot(one-of-K or dummy) 숫자 배열로 인코딩 = 하나의 값만 True고 나머지는 False
 > 각각의 범주를 속성으로 만들어서 해당 범주면 1 아니면 0
 
 사용: 순서가 없을 때(연속적인 특성x), 고유값의 개수가 적을 때
