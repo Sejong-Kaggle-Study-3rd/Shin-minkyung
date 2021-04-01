@@ -5,31 +5,31 @@
   * 이를 잘 표현할 수 있는 회귀계수를 데이터로부터 추정
 
 ### 다중선형회귀 모델 방정식
-  이미지 첨부
+![image](https://user-images.githubusercontent.com/80238096/113357609-3983ca00-937f-11eb-8b4d-5537110efcf9.png)
 
 ### 회귀 계수 결정법
-1. Direct Solution
+#### 1. Direct Solution
 회귀계수 = 오차제곱합을 최소로 하는 값
 -> 명시적 해: error식의 미분값이 0이 되는 곳
 
 
-2. Numerical Search
+#### 2. Numerical Search
 회귀계수 = 경사하강법(gradient descent)
 > 경사하강법(gradient descent): 어떤 함수(목적함수, 비용함수, 에러 값)값을 최소화하기 위해 임의의 시작점을 잡은 후 해당 지점에서의 경사 기울기를 구하고 경사의 반대방향으로 조금씩 이동하는 과정(learning rate)를 여러번 반복하는 과정
 
-1. Batch Gradient Descent(GD) = Vanila Gradient Descent
+##### 1. Batch Gradient Descent(GD) = Vanila Gradient Descent
 파라미터를 업데이트 할 때: __모든 학습데이터__ 사용하여 gradient 계산
 * 매우 낮은 학습 효율
 
 
-2. Stochastic Gradient Descent(SGD)
+##### 2. Stochastic Gradient Descent(SGD)
 파라미터를 업데이트 할 때: __무작위로 샘플링__ 된 학습데이터를 하나씩만 이용하여 gradient 계산
 * 모델을 자주 업데이트 가능
 * local minima에 빠질 가능성 ↓
 * 최소 cost에 수렴했는지 판단이 어려움
 
 
-3. Mini Batch Gradient Descent
+##### 3. Mini Batch Gradient Descent
 파라미터를 업데이트 할 때: __일정량의 일부 데이터를 무작위__ 로 뽑아 gradient계산
 * Batch GD + Stochastic GD
 -> SGD의 노이즈를 줄임 + GD의 전체 배치보다 효율적
@@ -62,14 +62,25 @@ variance를 감소시켜 일반화 성능을 높이는 기법
 >다중선형회귀의 문제점: 범주형 데이터에 적용 불가
 
 #### logstic function
+![image](https://user-images.githubusercontent.com/80238096/113357746-73ed6700-937f-11eb-853b-d2fcf6af49b1.png)
+![image](https://user-images.githubusercontent.com/80238096/113358098-19083f80-9380-11eb-8c67-3c05f18f5f28.png)
+
 * S-커브 함수 = sigmoid 함수
-이미지  첨부
+-> 실제 사회현상은 선형이 아닌 S형
 
 ### 이항 로지스틱 회귀
 Y가 범주형일 경우 다중선형회귀 모델을 적용할 수 없음
 > Y = 연속형 숫자, 범주형 = 0,1인 의미없는 비연속형 숫자
 
 범주형 데이터를 연속형 숫자로 change
-~수식~
+#### odds
+![image](https://user-images.githubusercontent.com/80238096/113358130-29b8b580-9380-11eb-9459-c098a6057c0e.png)
+
+로지스틱 함수
+![image](https://user-images.githubusercontent.com/80238096/113358160-3ccb8580-9380-11eb-8453-c738ff45e6df.png)
+
+회귀의 결정경계
 
 ### 다항 로지스틱 회귀
+![image](https://user-images.githubusercontent.com/80238096/113357309-c2e6cc80-937e-11eb-9ded-e5c4a5de0d6e.png)
+
