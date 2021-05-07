@@ -8,3 +8,4 @@
 |5|ML|[판별 분류](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week5.md)|
 |6|ML|[의사결정나무](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week6.md)|
 |7|ML|[SVM](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week7.md)|
+|8|ML|[군집화](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week8.md)|
