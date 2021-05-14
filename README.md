@@ -9,4 +9,4 @@
 |6|ML|[의사결정나무](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week6.md)|
 |7|ML|[SVM](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week7.md)|
 |8|ML|[군집화](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week8.md)|
-|9|ML|[차원축소](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week9.md)|
+|9|ML|[차원축소](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week9.md)|[차원축소](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/code/08%EC%9E%A5_dimensional_reduction.ipynb)
