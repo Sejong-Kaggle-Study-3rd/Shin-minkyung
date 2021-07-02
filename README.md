@@ -13,4 +13,4 @@
 |10|ML|[교차검증](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week10.md)|
 |11|AI|[선형회귀](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week11.md)|
 |12|AI|[선형분류](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week12.md)|
-|13|AI|[NN](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week13.md)|
+|13|AI|[NN](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week13.md)|[XOR perceptron](https://colab.research.google.com/drive/1-jra-eezGMj2MuuSHbYiGRA-bl1GsNPD)<br>[XOR MLP](https://colab.research.google.com/drive/11Q8sIPbN44NDVXSP0NhHN9k7EbCue8uH)<br>[XOR MLP 2](https://colab.research.google.com/drive/1fTe2uFD7MPB5jQWuISxDphHWXaLRaCm9)
