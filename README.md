@@ -12,4 +12,5 @@
 |9|ML|[차원축소](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week9.md)|[차원축소](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/code/08%EC%9E%A5_dimensional_reduction.ipynb)
 |10|ML|[교차검증](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week10.md)|
 |11|ML|[교차검증](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week11.md)|
-|12|AI|[NN](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week12.md)|
+|12|ML|[교차검증](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week11.md)|
+|13,14|AI|[NN](https://github.com/Sejong-Kaggle-Study-3rd/Shin-minkyung/blob/main/note/week12.md)|
